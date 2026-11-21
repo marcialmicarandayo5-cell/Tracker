@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Habit Tracker</h1>
+      <p id="today-label"></p>
+    </header>
+
+    <form id="add-form">
+      <label for="habit-name" class="visually-hidden">New habit</label>
+      <input id="habit-name" type="text" placeholder="Add a habit, e.g. Read 20 minutes" maxlength="60" required>
+      <button type="submit">Add habit</button>
+    </form>
+
+    <section id="habits" aria-live="polite"></section>
+    <p id="empty" hidden>No habits yet. Add one above and check it off each day.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
